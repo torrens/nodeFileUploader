@@ -34,5 +34,12 @@ HTTPie is a cross platform HTTP client, which can be downloaded from here.  [htt
 *Upload with a failed authentication*
 ` http -f POST http://localhost:3000/david/password1 file@testImage.png`
 
+#Upload a file using CURL
+If you are using Yosemite on mac do this first 
+`echo '--ipv4' >> ~/.curlrc`
+
+`curl -i -F "file=@testImage.png" http://localhost:3000/mark/password`
+
+
 
 
