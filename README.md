@@ -1,6 +1,6 @@
 # nodeFileUploader
 
-This is a simple node Express example showing how easy it to write a webserver that can handle file uploads.
+This is a simple node Express sample showing how easy it to write a webserver that can handle file uploads in Node.
 
 #Installation
 
