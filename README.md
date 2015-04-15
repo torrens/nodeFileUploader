@@ -14,8 +14,25 @@ Then at the terminal.
 
 `node app.js`
 
-#Upload File using PostMan
+#Upload a file using Postman
 
-![alt text](https://github.com/torrens/nodeFileUploader/blob/master/postManSettings.png)
+[Postman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) is a REST client for chrome which is the easiest way to test an HTTP endpoint.
+
+Here are the settings needed to upload a file to the nodeFileUploader.
+![Postman Settings](https://github.com/torrens/nodeFileUploader/blob/master/postManSettings.png)
+
+#Upload a file using HTTPie
+
+HTTPie is a cross platform HTTP client, you can download it from here.  [https://github.com/jakubroztocil/httpie](https://github.com/jakubroztocil/httpie)
+
+*Upload a text file*
+`http -f POST http://localhost:3000/mark/password file@testText.txt`
+
+*Upload a binary file*
+`http -f POST http://localhost:3000/mark/password file@testImage.png`
+
+*Upload with a failed authentication*
+` http -f POST http://localhost:3000/david/password1 file@testImage.png`
+
 
 

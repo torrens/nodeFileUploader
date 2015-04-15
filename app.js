@@ -6,7 +6,7 @@ var express = require('express'),
 var app = express();
 
 // Middleware to check if user is authorised
-// This would need replaced with something robust
+// This would need replaced with something more serious
 function check(req, res, next) {
     var user = req.params.user;
     var password = req.params.password;
@@ -40,5 +40,5 @@ app.post('/:user/:password', check, multerMiddleWare, finish);
 var server = app.listen(3000, function () {
     var host = server.address().address;
     var port = server.address().port;
-    console.log('nodeFileUpload listening at http://%s:%s', host, port);
+    console.log('nodeFileUploader listening at http://%s:%s', host, port);
 });
