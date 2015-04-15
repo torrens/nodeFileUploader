@@ -23,7 +23,7 @@ Here are the settings needed to upload a file to the nodeFileUploader.
 
 #Upload a file using HTTPie
 
-HTTPie is a cross platform HTTP client, you can download it from here.  [https://github.com/jakubroztocil/httpie](https://github.com/jakubroztocil/httpie)
+HTTPie is a cross platform HTTP client, which can be downloaded from here.  [https://github.com/jakubroztocil/httpie](https://github.com/jakubroztocil/httpie)
 
 *Upload a text file*
 `http -f POST http://localhost:3000/mark/password file@testText.txt`
